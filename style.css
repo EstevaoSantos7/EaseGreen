@@ -42,6 +42,21 @@ header {
         font-weight: 500;
     }
 }
+header .navbar link::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 0;
+    background: linear-gradient(to right, hsl(136, 65%, 51%) 10%, hsl(192, 70%, 51%) 50%);
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s ease;
+}
+
+header link:hover::after{
+    width: 100%;
+}
 
 .containerCuriosidades {
     background-color: hsl(220, 16%, 96%);
